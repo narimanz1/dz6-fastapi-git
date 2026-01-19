@@ -11,3 +11,7 @@ def health():
 @app.get("/echo/{text}")
 def echo(text: str):
     return {"echo": text}
+
+@app.get("/version")
+def version():
+    return {"version": "1.0.0"}
